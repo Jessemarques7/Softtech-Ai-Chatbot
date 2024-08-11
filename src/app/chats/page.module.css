@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+}
+
+.main {
+  width: 100%; /* w-full */
+  height: 100vh; /* h-screen */
+  padding-top: 2.5rem; /* pt-10 */
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  justify-content: space-between; /* justify-between */
+}
+
+.h1 {
+  font-size: 1.875rem; /* text-3xl */
+  padding-bottom: 1.25rem; /* pb-5 */
+  font-weight: bold; /* font-bold */
+  color: #6b7280; /* text-gray */
+  text-align: center; /* text-center */
+}
+
+@media (min-width: 1024px) {
+  .h1 {
+    font-size: 45px; /* lg:text-[45px] */
+  }
+}

@@ -1,0 +1,61 @@
+.container {
+  padding: 2.5rem; /* p-10 */
+  width: 100%; /* w-full */
+  display: flex; /* flex */
+  justify-content: center; /* justify-center */
+}
+
+.main {
+  position: relative; /* relative */
+  max-width: 833px; /* max-w-[833px] */
+  width: 100%; /* w-full */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+@media (min-width: 1024px) {
+  .main {
+    margin-bottom: 2.5rem; /* lg:mb-10 */
+  }
+}
+
+.input {
+  display: flex; /* flex */
+  height: 2.5rem; /* h-10 */
+  width: 100%; /* w-full */
+  border-radius: 15px; /* rounded-md */
+  border-width: 1px; /* border */
+  border-bottom-width: 1px; /* border-b */
+  background-color: #f3f4f6; /* bg-background-light */
+  font-size: 0.875rem; /* text-sm */
+
+  color: #6b7280; /* text-gray */
+  padding: 1.5rem; /* p-6 */
+  outline-offset: 2px; /* focus-visible:ring-offset-2 */
+}
+
+.input::placeholder {
+  color: #9ca3af; /* placeholder:text-gray */
+}
+
+.input:focus-visible {
+  outline: 2px solid #f3f4f6; /* focus-visible:ring-background-light */
+}
+
+.input:disabled {
+  cursor: not-allowed; /* disabled:cursor-not-allowed */
+  opacity: 0.5; /* disabled:opacity-50 */
+}
+
+.button {
+  position: absolute; /* absolute */
+  right: 1.5rem; /* right-6 */
+  top: 50%; /* top-1/2 */
+  transform: translateY(-50%); /* -translate-y-1/2 */
+  cursor: pointer; /* cursor-pointer */
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+}
+
+.button button {
+  border: none;
+}

@@ -1,0 +1,30 @@
+.messages {
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  height: 100%; /* h-full */
+  width: 100%; /* w-full */
+  justify-content: flex-start; /* justify-start */
+  align-items: center; /* items-center */
+  overflow-y: auto; /* overflow-y-auto */
+}
+
+.messageBlock {
+  color: #000; /* text-white */
+  background-color: #f3f4f6; /* bg-background-light */
+  padding: 2rem 1rem; /* px-4 py-8 */
+  width: 100%; /* w-full */
+  display: flex; /* flex */
+  justify-content: center; /* justify-center */
+}
+
+.message {
+  width: 100%; /* w-full */
+  max-width: 833px; /* max-w-[833px] */
+  display: flex; /* flex */
+}
+
+.content {
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  gap: 1rem; /* gap-4 */
+}
