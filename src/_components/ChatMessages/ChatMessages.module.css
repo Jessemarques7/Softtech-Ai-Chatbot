@@ -4,27 +4,47 @@
   height: 100%; /* h-full */
   width: 100%; /* w-full */
   justify-content: flex-start; /* justify-start */
-  align-items: center; /* items-center */
+
   overflow-y: auto; /* overflow-y-auto */
+  border-radius: 20px;
+  margin: 10px 100px;
 }
 
 .messageBlock {
-  color: #000; /* text-white */
-  background-color: #f3f4f6; /* bg-background-light */
-  padding: 2rem 1rem; /* px-4 py-8 */
-  width: 100%; /* w-full */
+  color: #333; /* text-white */
+  /* px-4 py-8 */
+  /* w-full */
   display: flex; /* flex */
-  justify-content: center; /* justify-center */
+
+  margin-bottom: 30px;
 }
 
-.message {
+.messageUser {
   width: 100%; /* w-full */
   max-width: 833px; /* max-w-[833px] */
   display: flex; /* flex */
+  justify-content: flex-end;
+}
+.messageAssistant {
+  width: 100%; /* w-full */
+  max-width: 833px; /* max-w-[833px] */
+  display: flex; /* flex */
+  justify-content: flex-start;
 }
 
 .content {
   display: flex; /* flex */
   flex-direction: column; /* flex-col */
   gap: 1rem; /* gap-4 */
+  padding: 20px 50px;
+  background-color: #f3f4f6;
+  margin: 0 10px;
+  border-radius: 20px;
+}
+
+.logouser {
+  border-radius: 50%;
+}
+.loading {
+  margin-left: 10px;
 }

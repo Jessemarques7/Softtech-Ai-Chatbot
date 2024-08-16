@@ -18,26 +18,42 @@ export default function ChatMessages({ messages, isLoading }) {
 function MessageBLock({ message, isLoading = false }) {
   return (
     <div className={styles.messageBlock}>
-      <div className={styles.message}>
-        <Image
-          alt={message.role}
-          src={`/images/${message.role}-icon.png`}
-          width={36}
-          height={36}
-          className="mr-4 self-start"
-        />
+      <div
+        className={
+          message.role === "user" ? styles.messageUser : styles.messageAssistant
+        }
+      >
+        {message.role === "assistant" && (
+          <Image
+            alt={message.role}
+            src={`/images/${message.role}-icon.png`}
+            width={36}
+            height={36}
+            className={styles.logouser}
+          />
+        )}
         {isLoading ? (
           <Image
             src={"/images/loading.svg"}
             width={36}
             height={36}
             alt="whatever"
-            className="mr-4"
+            className={styles.loading}
           />
         ) : (
           <div className={styles.content}>
             <Markdown>{message.content}</Markdown>
           </div>
+        )}
+
+        {message.role === "user" && (
+          <Image
+            alt={message.role}
+            src={`/images/${message.role}-icon.png`}
+            width={36}
+            height={36}
+            className={styles.logouser}
+          />
         )}
       </div>
     </div>

@@ -12,19 +12,13 @@
   margin-bottom: 1rem; /* mb-4 */
 }
 
-@media (min-width: 1024px) {
-  .main {
-    margin-bottom: 2.5rem; /* lg:mb-10 */
-  }
-}
-
 .input {
   display: flex; /* flex */
   height: 2.5rem; /* h-10 */
   width: 100%; /* w-full */
-  border-radius: 15px; /* rounded-md */
+  border-radius: 25px; /* rounded-md */
   border-width: 1px; /* border */
-  border-bottom-width: 1px; /* border-b */
+  border: 1px solid #ddd;
   background-color: #f3f4f6; /* bg-background-light */
   font-size: 0.875rem; /* text-sm */
 
@@ -38,7 +32,7 @@
 }
 
 .input:focus-visible {
-  outline: 2px solid #f3f4f6; /* focus-visible:ring-background-light */
+  outline: none; /* focus-visible:ring-background-light */
 }
 
 .input:disabled {

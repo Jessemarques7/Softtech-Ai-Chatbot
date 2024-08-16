@@ -1,13 +1,3 @@
-// import OpenAI from "openai";
-
-// // USE A OPENAI API KEY PARA CRIAR UMA NOVA INSTÂNCIA
-// const openai = (key: string): OpenAI =>
-//   new OpenAI({
-//     apiKey: key,
-//   });
-
-// export default openai;
-
 import Groq from "groq-sdk";
 
 // const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });

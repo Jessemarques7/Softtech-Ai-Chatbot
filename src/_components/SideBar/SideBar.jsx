@@ -30,14 +30,14 @@ export default function SideBar({
     <>
       {isVisible && (
         <>
-          <button onClick={handleClick} className={styles.mainButton}>
+          {/* <button onClick={handleClick} className={styles.mainButton}>
             <Image
               width={25}
               height={16}
               alt="abrir barra"
               src={"/images/open-menu.svg"}
             />
-          </button>
+          </button> */}
           <div className={styles.div}></div>
           <nav className={styles.nav}>
             <div className={styles.titleMain}>
