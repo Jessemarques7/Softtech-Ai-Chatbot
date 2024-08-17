@@ -5,15 +5,33 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className={styles.header}>
-      <Image alt="logo" src={"/softtek-logo.png"} width={130} height={42} />
+      <Link href={"/"}>
+        <Image
+          alt="logo"
+          src={"/softtek-logo.png"}
+          width={120}
+          height={42}
+          className={styles.image}
+        />
+      </Link>
       <nav className={styles.menu}>
+        <Link className={styles.link} href={"/chats"}>
+          Chat
+        </Link>
         <Link className={styles.link} href={"/chamados"}>
           Chamados
         </Link>
         <Link className={styles.link} href={"/chamados"}>
-          Chat
+          Dashboard
         </Link>
       </nav>
+      <Image
+        alt="user"
+        src={"/images/user-icon.png"}
+        height={42}
+        width={42}
+        className={styles.image}
+      />
     </header>
   );
 }
