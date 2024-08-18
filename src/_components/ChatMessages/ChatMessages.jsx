@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Markdown from "react-markdown";
-import styles from "./ChatMessages.module.css";
+import styles from "./ChatMessages.module.scss";
 
 export default function ChatMessages({ messages, isLoading }) {
   return (
