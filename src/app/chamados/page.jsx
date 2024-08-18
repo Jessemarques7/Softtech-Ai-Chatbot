@@ -1,6 +1,6 @@
 "use client";
 import Header from "@/_components/Header/Header";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import data from "../../utils/baseDados";
 import Chamado from "@/_components/Chamado/Chamado";
 
@@ -19,7 +19,7 @@ export default function Chamados() {
               <th className={styles.rowTitle}>Aberto</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className={styles.tBody}>
             {data.map((chamado, index) => (
               <Chamado chamado={chamado} key={index} />
             ))}

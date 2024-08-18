@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 import Link from "next/link";
 
 export default function Header() {
@@ -21,7 +21,7 @@ export default function Header() {
         <Link className={styles.link} href={"/chamados"}>
           Chamados
         </Link>
-        <Link className={styles.link} href={"/chamados"}>
+        <Link className={styles.link} href={"/dashboard"}>
           Dashboard
         </Link>
       </nav>

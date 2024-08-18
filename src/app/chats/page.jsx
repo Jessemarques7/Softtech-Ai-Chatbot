@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import ChatInput from "@/_components/ChatInput/ChatInput";
 import ChatMessages from "@/_components/ChatMessages/ChatMessages";
 import Header from "@/_components/Header/Header";

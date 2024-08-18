@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 200px;
+  margin: 30px;
+}
+
+.large1 {
+  height: 315px;
+  width: 100%;
+  display: flex;
+  border-radius: 30px;
+}
+
+.large {
+  height: 315px;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  border-radius: 30px;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.small {
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  border-radius: 30px;
+  margin-left: 15px;
+  padding: 30px;
+}
+.small1 {
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  border-radius: 30px;
+  margin-right: 15px;
+  padding: 30px;
+}

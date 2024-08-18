@@ -5,7 +5,7 @@
   justify-content: center;
 }
 .table {
-  border: 1px solid black;
+  border: 1px solid #aaa;
 
   background-color: #ccf1cc;
   border-radius: 20px;
@@ -16,6 +16,7 @@
   padding-top: 0;
   cursor: pointer;
 }
+
 .tableHead {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -29,7 +30,7 @@
   background-color: #a0e6a0;
   border-radius: 20px;
 
-  border: 1px solid black;
+  border: 1px solid #aaa;
   text-transform: uppercase;
 
   font-weight: 600;
@@ -38,4 +39,9 @@
 
 .rowTitle {
   text-align: start;
+}
+.tBody {
+  :not(:last-child) {
+    border-bottom: 1px solid gray;
+  }
 }
