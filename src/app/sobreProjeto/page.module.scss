@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  width: 100%;
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.h1 {
+  font-size: 1.875rem;
+  padding-bottom: 1.25rem;
+  font-weight: bold;
+  color: #6b7280;
+  text-align: center;
+}
+
+.containerCards {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.image {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.8rem;
+  height: auto;
+  border-radius: 10px 10px;
+}
+
+.cardTitle {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  padding-bottom: 1rem;
+}
+
+.p {
+  text-align: justify;
+}
+
+@media (min-width: 1024px) {
+  .h1 {
+    font-size: 45px;
+  }
+}

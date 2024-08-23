@@ -24,6 +24,9 @@ export default function Header() {
         <Link className={styles.link} href={"/dashboard"}>
           Dashboard
         </Link>
+        <Link className={styles.link} href={"/sobreProjeto"}>
+          Sobre o Projeto
+        </Link>
       </nav>
       <Image
         alt="user"
