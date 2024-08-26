@@ -23,59 +23,60 @@ import {
 const data = [
   {
     name: "",
-    uv: 490,
-    pv: 300,
+    chamados: 0,
+    pv: 100,
     amt: 100,
   },
   {
     name: "Fevereiro",
-    uv: 400,
-    pv: 200,
+    chamados: 4,
+    pv: 100,
     amt: 400,
   },
-  {
-    name: "",
-    uv: 490,
-    pv: 300,
-    amt: 100,
-  },
+  // {
+  //   name: "",
+  //   uv: 5,
+  //   pv: 100,
+  //   amt: 100,
+  // },
   {
     name: "Março",
-    uv: 300,
-    pv: 398,
+    chamados: 6,
+    pv: 100,
     amt: 210,
   },
-  {
-    name: "",
-    uv: 890,
-    pv: 800,
-    amt: 181,
-  },
+  // {
+  //   name: "",
+  //   uv: 16,
+  //   pv: 100,
+  //   amt: 181,
+  // },
   {
     name: "Abril",
-    uv: 200,
-    pv: 800,
+    chamados: 25,
+    pv: 100,
     amt: 290,
   },
-  {
-    name: "",
-    uv: 390,
-    pv: 800,
-    amt: 500,
-  },
+  // {
+  //   name: "",
+  //   uv: 20,
+  //   pv: 100,
+  //   amt: 500,
+  // },
   {
     name: "Maio",
-    uv: 280,
-    pv: 908,
+    chamados: 15,
+    pv: 108,
     amt: 200,
   },
 ];
 
 const dataPie = [
-  { name: "Group A", value: 400 },
-  { name: "Group B", value: 300 },
-  { name: "Group C", value: 300 },
-  { name: "Group D", value: 200 },
+  { name: "AMS-Não SAP", value: 5 },
+  { name: "Service Desk", value: 3 },
+  { name: "Acesso", value: 8 },
+  { name: "Field Service", value: 12 },
+  { name: "Ativos", value: 7 },
 ];
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#aa42ff"];
@@ -109,46 +110,28 @@ const renderCustomizedLabel = ({
 
 const dataBar = [
   {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
+    name: "Fevereiro",
+    fechado: 3,
+    resolvido: 1,
     amt: 2400,
   },
   {
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
+    name: "Março",
+    fechado: 2,
+    resolvido: 4,
     amt: 2210,
   },
   {
-    name: "Page C",
-    uv: 2000,
-    pv: 9800,
+    name: "Abril",
+    fechado: 13,
+    resolvido: 12,
     amt: 2290,
   },
   {
-    name: "Page D",
-    uv: 2780,
-    pv: 3908,
+    name: "Maio",
+    fechado: 1,
+    resolvido: 14,
     amt: 2000,
-  },
-  {
-    name: "Page E",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
   },
 ];
 export default function Dashboard() {
@@ -199,13 +182,14 @@ export default function Dashboard() {
                 <YAxis />
                 <Tooltip />
                 <Legend />
+
                 <Bar
-                  dataKey="pv"
+                  dataKey="fechado"
                   fill="#8884d8"
                   activeBar={<Rectangle fill="pink" stroke="blue" />}
                 />
                 <Bar
-                  dataKey="uv"
+                  dataKey="resolvido"
                   fill="#82ca9d"
                   activeBar={<Rectangle fill="gold" stroke="purple" />}
                 />
@@ -232,7 +216,7 @@ export default function Dashboard() {
               <Tooltip />
               <Area
                 type="monotone"
-                dataKey="uv"
+                dataKey="chamados"
                 stroke="#8884d8"
                 fill="#8884d8"
               />
