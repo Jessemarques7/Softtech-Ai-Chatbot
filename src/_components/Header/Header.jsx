@@ -24,7 +24,7 @@ export default function Header() {
         <Link className={styles.link} href={"/dashboard"}>
           Dashboard
         </Link>
-        <Link className={styles.link} href={"/sobreProjeto"}>
+        <Link className={styles.link} href={"/sobre"}>
           Sobre o Projeto
         </Link>
       </nav>
