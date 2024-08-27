@@ -16,13 +16,18 @@
   margin-right: -250px;
 }
 
-.link {
-  margin: 0 50px;
-  color: #555566;
-  font-weight: 600;
-  font-size: 20px;
+.image {
+  margin: 0 20px;
+  cursor: pointer;
 }
 
-.image {
-  margin: 0 50px;
+.icon {
+  font-size: 40px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
 }

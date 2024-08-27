@@ -3,13 +3,13 @@
   position: absolute; /* absolute */
   background-color: #fff; /* bg-background-dark */
   border: 1px solid #d1d5db; /* border border-border */
-  padding: 0.5rem; /* p-2 */
+  padding: 0.7rem; /* p-2 */
   border-radius: 0.375rem; /* rounded-md */
   display: flex; /* flex */
   align-items: center; /* items-center */
   justify-content: center; /* justify-center */
-  left: 1rem; /* left-4 */
-  top: 1rem; /* top-4 */
+  right: 55px; /* left-4 */
+  top: 100px; /* top-4 */
 }
 .nav {
   position: fixed; /* fixed */
@@ -37,7 +37,7 @@
 }
 
 .open {
-  background-color: #1f2937; /* bg-background-dark */
+  background-color: #e8e8e8; /* bg-background-dark */
   border: 1px solid #d1d5db; /* border border-border */
   padding: 0.5rem; /* p-2 */
   border-radius: 0.375rem; /* rounded-md */
@@ -45,9 +45,6 @@
   display: flex; /* flex */
   align-items: center; /* items-center */
   justify-content: center; /* justify-center */
-  position: absolute; /* absolute */
-  left: 1rem; /* left-4 */
-  top: 1rem; /* top-4 */
 }
 
 .div {

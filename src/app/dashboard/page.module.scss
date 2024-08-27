@@ -1,20 +1,26 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: 0 200px;
+
   margin: 30px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.main {
+  display: flex;
 }
 
 .large1 {
   height: 315px;
-  width: 100%;
+  width: 90%;
   display: flex;
   border-radius: 30px;
 }
 
 .large {
   height: 315px;
-  width: 100%;
+  width: 90%;
   display: flex;
   background-color: white;
   border-radius: 30px;

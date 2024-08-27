@@ -6,10 +6,14 @@ import ChatMessages from "@/_components/ChatMessages/ChatMessages";
 import Header from "@/_components/Header/Header";
 import SideBar from "@/_components/SideBar/SideBar";
 import { useChat } from "@/utils/use-chat";
+import { useState } from "react";
+import MenuBar from "../../_components/Menu/MenuBar";
 
 const openAiKey = "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";
 
 export default function Chats() {
+  const [isOpen, setIsOpen] = useState(true); // window.innerWidth > 768
+
   const {
     chats,
     isLoading,
@@ -29,16 +33,9 @@ export default function Chats() {
 
   return (
     <>
-      <Header />
+      <Header setIsOpen={setIsOpen} />
       <div className={styles.container}>
-        <SideBar
-          isVisible={!!openAiKey}
-          selectedChat={selectedChat}
-          selectChat={selectChat}
-          deleteChat={deleteChat}
-          chats={chats}
-        />
-
+        <MenuBar isOpen={isOpen} />
         <main className={styles.main}>
           <h1 className={styles.h1}>Softtek Ai</h1>
           <ChatMessages
@@ -50,6 +47,12 @@ export default function Chats() {
             placeholder={placeholder}
           />
         </main>
+        <SideBar
+          selectedChat={selectedChat}
+          selectChat={selectChat}
+          deleteChat={deleteChat}
+          chats={chats}
+        />
       </div>
     </>
   );

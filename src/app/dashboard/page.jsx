@@ -19,6 +19,8 @@ import {
   Bar,
   Rectangle,
 } from "recharts";
+import MenuBar from "@/_components/Menu/MenuBar";
+import { useState } from "react";
 
 const data = [
   {
@@ -135,93 +137,97 @@ const dataBar = [
   },
 ];
 export default function Dashboard() {
+  const [isOpen, setIsOpen] = useState(true);
   return (
     <div>
-      <Header />
-      <div className={styles.container}>
-        <div className={styles.large1}>
-          <div className={styles.small}>
-            <ResponsiveContainer width="100%" height="100%">
-              <PieChart width={400} height={400}>
-                <Pie
-                  data={dataPie}
-                  cx="50%"
-                  cy="50%"
-                  labelLine={false}
-                  label={renderCustomizedLabel}
-                  outerRadius={80}
-                  fill="#8884d8"
-                  dataKey="value"
-                >
-                  {dataPie.map((entry, index) => (
-                    <Cell
-                      key={`cell-${index}`}
-                      fill={COLORS[index % COLORS.length]}
-                    />
-                  ))}
-                </Pie>
-              </PieChart>
-            </ResponsiveContainer>
-          </div>
+      <Header setIsOpen={setIsOpen} />
+      <div className={styles.main}>
+        <MenuBar isOpen={isOpen} />
+        <div className={styles.container}>
+          <div className={styles.large1}>
+            <div className={styles.small1}>
+              <ResponsiveContainer width="100%" height="100%">
+                <PieChart width={400} height={400}>
+                  <Pie
+                    data={dataPie}
+                    cx="50%"
+                    cy="50%"
+                    labelLine={false}
+                    label={renderCustomizedLabel}
+                    outerRadius={80}
+                    fill="#8884d8"
+                    dataKey="value"
+                  >
+                    {dataPie.map((entry, index) => (
+                      <Cell
+                        key={`cell-${index}`}
+                        fill={COLORS[index % COLORS.length]}
+                      />
+                    ))}
+                  </Pie>
+                </PieChart>
+              </ResponsiveContainer>
+            </div>
 
-          <div className={styles.small}>
+            <div className={styles.small}>
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart
+                  width={500}
+                  height={300}
+                  data={dataBar}
+                  margin={{
+                    top: 5,
+                    right: 30,
+                    left: 20,
+                    bottom: 5,
+                  }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="name" />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
+
+                  <Bar
+                    dataKey="fechado"
+                    fill="#8884d8"
+                    activeBar={<Rectangle fill="pink" stroke="blue" />}
+                  />
+                  <Bar
+                    dataKey="resolvido"
+                    fill="#82ca9d"
+                    activeBar={<Rectangle fill="gold" stroke="purple" />}
+                  />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+          <div className={styles.large}>
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart
+              <AreaChart
                 width={500}
-                height={300}
-                data={dataBar}
+                height={400}
+                data={data}
                 margin={{
-                  top: 5,
+                  top: 10,
                   right: 30,
-                  left: 20,
-                  bottom: 5,
+                  left: 0,
+                  bottom: 0,
                 }}
               >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip />
-                <Legend />
-
-                <Bar
-                  dataKey="fechado"
+                <Area
+                  type="monotone"
+                  dataKey="chamados"
+                  stroke="#8884d8"
                   fill="#8884d8"
-                  activeBar={<Rectangle fill="pink" stroke="blue" />}
                 />
-                <Bar
-                  dataKey="resolvido"
-                  fill="#82ca9d"
-                  activeBar={<Rectangle fill="gold" stroke="purple" />}
-                />
-              </BarChart>
+              </AreaChart>
             </ResponsiveContainer>
           </div>
-        </div>
-        <div className={styles.large}>
-          <ResponsiveContainer width="100%" height="100%">
-            <AreaChart
-              width={500}
-              height={400}
-              data={data}
-              margin={{
-                top: 10,
-                right: 30,
-                left: 0,
-                bottom: 0,
-              }}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="name" />
-              <YAxis />
-              <Tooltip />
-              <Area
-                type="monotone"
-                dataKey="chamados"
-                stroke="#8884d8"
-                fill="#8884d8"
-              />
-            </AreaChart>
-          </ResponsiveContainer>
         </div>
       </div>
     </div>

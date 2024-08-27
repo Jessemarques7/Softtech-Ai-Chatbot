@@ -3,7 +3,7 @@
 // import { Chats } from "@/utils/use-chat";
 import Image from "next/image";
 import { useState } from "react";
-import styles from "./SideBar.module.css";
+import styles from "./SideBar.module.scss";
 
 export default function SideBar({
   isVisible,
@@ -12,7 +12,7 @@ export default function SideBar({
   chats,
   deleteChat,
 }) {
-  const [isOpen, setIsOpen] = useState(true); // window.innerWidth > 768
+  const [isOpen, setIsOpen] = useState(false); // window.innerWidth > 768
 
   function handleClick() {
     setIsOpen((e) => !e);
@@ -28,28 +28,19 @@ export default function SideBar({
   }
   return (
     <>
-      {isVisible && (
+      {isOpen ? (
         <>
-          {/* <button onClick={handleClick} className={styles.mainButton}>
-            <Image
-              width={25}
-              height={16}
-              alt="abrir barra"
-              src={"/images/open-menu.svg"}
-            />
-          </button> */}
-          <div className={styles.div}></div>
           <nav className={styles.nav}>
             <div className={styles.titleMain}>
               <h3 className={styles.h3}>Lista de conversas</h3>
-              {/* <button onClick={handleClick} className={styles.open}>
+              <button onClick={handleClick} className={styles.open}>
                 <Image
                   width={25}
                   height={16}
                   alt="abrir barra"
                   src={"/images/open-menu.svg"}
                 />
-              </button> */}
+              </button>
             </div>
             <div className={styles.lista}>
               {Object.keys(chats).map((chatIndex) => (
@@ -86,6 +77,15 @@ export default function SideBar({
             </div>
           </nav>
         </>
+      ) : (
+        <button onClick={handleClick} className={styles.mainButton}>
+          <Image
+            width={25}
+            height={16}
+            alt="abrir barra"
+            src={"/images/open-menu.svg"}
+          />
+        </button>
       )}
     </>
   );

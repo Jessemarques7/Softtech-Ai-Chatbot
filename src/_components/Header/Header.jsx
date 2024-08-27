@@ -1,33 +1,27 @@
 import Image from "next/image";
 import styles from "./Header.module.scss";
 import Link from "next/link";
+import { FiMenu } from "react-icons/fi";
 
-export default function Header() {
+export default function Header({ setIsOpen }) {
   return (
     <header className={styles.header}>
-      <Link href={"/"}>
-        <Image
-          alt="logo"
-          src={"/softtek-logo.png"}
-          width={120}
-          height={42}
-          className={styles.image}
-        />
-      </Link>
-      <nav className={styles.menu}>
-        <Link className={styles.link} href={"/chats"}>
-          Chat
+      <div>
+        <button onClick={() => setIsOpen((e) => !e)} className={styles.button}>
+          <FiMenu className={styles.icon} />
+        </button>
+
+        <Link href={"/"}>
+          <Image
+            alt="logo"
+            src={"/softtek-logo.png"}
+            width={120}
+            height={42}
+            className={styles.image}
+          />
         </Link>
-        <Link className={styles.link} href={"/chamados"}>
-          Chamados
-        </Link>
-        <Link className={styles.link} href={"/dashboard"}>
-          Dashboard
-        </Link>
-        <Link className={styles.link} href={"/sobre"}>
-          Sobre o Projeto
-        </Link>
-      </nav>
+      </div>
+      <nav className={styles.menu}></nav>
       <Image
         alt="user"
         src={"/images/user-icon.png"}
