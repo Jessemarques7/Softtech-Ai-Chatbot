@@ -1,9 +1,22 @@
-.main {
+.container {
   display: flex;
   padding: 30px;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
+
+.ContainerTable {
+  background-color: #b5ebb5;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 30px;
+}
+
+.main {
+  display: flex;
+}
+
 .table {
   // border: 1px solid #aaa;
 
@@ -12,7 +25,7 @@
   /* overflow: hidden; */
   min-width: 860px;
   padding: 20px;
-  margin-top: 50px;
+
   padding-top: 0;
   cursor: pointer;
 }

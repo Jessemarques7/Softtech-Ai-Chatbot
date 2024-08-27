@@ -10,6 +10,13 @@ export default function MenuBar({ isOpen }) {
       {isOpen && (
         <>
           <nav className={styles.nav}>
+            <Link className={styles.link} href={"/"}>
+              Home
+            </Link>
+            <Link className={styles.link} href={"/sobre"}>
+              Sobre o Projeto
+            </Link>
+            <hr />
             <Link className={styles.link} href={"/chats"}>
               Chat
             </Link>
@@ -18,9 +25,6 @@ export default function MenuBar({ isOpen }) {
             </Link>
             <Link className={styles.link} href={"/dashboard"}>
               Dashboard
-            </Link>
-            <Link className={styles.link} href={"/sobre"}>
-              Sobre o Projeto
             </Link>
           </nav>
         </>

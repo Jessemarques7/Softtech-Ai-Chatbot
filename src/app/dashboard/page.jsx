@@ -81,7 +81,7 @@ const dataPie = [
   { name: "Ativos", value: 7 },
 ];
 
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#aa42ff"];
+const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#aa42ff", "#ff4242"];
 
 const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({
@@ -167,6 +167,15 @@ export default function Dashboard() {
                   </Pie>
                 </PieChart>
               </ResponsiveContainer>
+
+              <div className={styles.summary}>
+                {dataPie.map((item, index) => (
+                  <div key={index}>
+                    <span className={styles.block}></span>
+                    {item.name}
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div className={styles.small}>

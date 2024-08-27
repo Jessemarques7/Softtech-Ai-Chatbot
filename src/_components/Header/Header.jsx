@@ -10,7 +10,6 @@ export default function Header({ setIsOpen }) {
         <button onClick={() => setIsOpen((e) => !e)} className={styles.button}>
           <FiMenu className={styles.icon} />
         </button>
-
         <Link href={"/"}>
           <Image
             alt="logo"

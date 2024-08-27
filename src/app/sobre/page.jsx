@@ -6,15 +6,10 @@ import styles from "./page.module.scss";
 import Header from "@/_components/Header/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import MenuBar from "@/_components/Menu/MenuBar";
 
 // Dados dos integrantes com a mesma foto
 const integrantes = [
-  {
-    nome: "Lucas Gomes Tambasco",
-    foto: "/integrantes/lucasT-1.png",
-    descricao:
-      "Foi um dos responsáveis pelo desenvolvimento da interface de usuário, criando e implementando componentes interativos para garantir uma experiência de usuário fluida e intuitiva.",
-  },
   {
     nome: "Thiago dos Santos Cordeiro",
     foto: "/integrantes/",
@@ -22,8 +17,14 @@ const integrantes = [
   },
   {
     nome: "Jessé Marques Mateus",
-    foto: "/integrantes/",
+    foto: "/integrantes/jesseM-2.jpeg",
     descricao: "Descrição do que o integrante realizou no projeto.",
+  },
+  {
+    nome: "Lucas Gomes Tambasco",
+    foto: "/integrantes/lucasT-1.png",
+    descricao:
+      "Foi um dos responsáveis pelo desenvolvimento da interface de usuário, criando e implementando componentes interativos para garantir uma experiência de usuário fluida e intuitiva.",
   },
   {
     nome: "Jean Giusepe Silva Macedo",
@@ -38,6 +39,7 @@ const integrantes = [
 ];
 
 export default function SobreProjeto() {
+  const [isOpen, setIsOpen] = useState(true); // window.innerWidth > 768
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   const toggleExpand = (index) => {
@@ -46,8 +48,9 @@ export default function SobreProjeto() {
 
   return (
     <>
-      <Header />
+      <Header setIsOpen={setIsOpen} />
       <div className={styles.container}>
+        <MenuBar isOpen={isOpen} />
         <main className={styles.main}>
           <h1 className={styles.h1}>Integrantes</h1>
           <div className="container my-4">
