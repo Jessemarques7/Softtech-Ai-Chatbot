@@ -1,3 +1,8 @@
+$dark-blue: #415a80;
+$light-blue: #a5d4dc;
+$main-white: #e5e7e9;
+$secondary-white: #d7e2e9;
+
 .container {
   display: flex;
   padding: 30px;
@@ -7,9 +12,9 @@
 }
 
 .ContainerTable {
-  background-color: #b5ebb5;
+  background-color: $secondary-white;
   padding: 30px;
-  margin-top: 50px;
+  margin-top: 20px;
   border-radius: 30px;
 }
 
@@ -20,7 +25,7 @@
 .table {
   // border: 1px solid #aaa;
 
-  background-color: #ccf1cc;
+  background-color: $main-white;
   border-radius: 20px;
   /* overflow: hidden; */
   min-width: 860px;
@@ -40,7 +45,7 @@
   padding: 20px 50px;
   margin: 10px -40px;
 
-  background-color: #a0e6a0;
+  background-color: $light-blue;
   border-radius: 20px;
 
   border: 1px solid #aaa;

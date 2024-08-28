@@ -4,16 +4,22 @@
   margin: 0;
 }
 
+$dark-blue: #415a80;
+$light-blue: #a5d4dc;
+$main-white: #e5e7e9;
+$secondary-white: #d7e2e9;
+
 html,
 body {
   max-width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: white;
+  background-color: #eee;
+
   background-image: radial-gradient(
       at 17% 23%,
-      hsl(206, 58%, 75%) 0,
+      hsl(221, 100%, 77%) 0,
       transparent 59%
     ),
-    radial-gradient(at 82% 85%, hsl(167, 55%, 70%) 0, transparent 55%);
+    radial-gradient(at 82% 85%, hsl(193, 65%, 73%) 0, transparent 55%);
 }

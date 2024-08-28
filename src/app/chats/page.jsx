@@ -32,7 +32,7 @@ export default function Chats() {
   const handleChatSubmit = !!openAiKey ? handleSubmitMessage : setOpenAiKey;
 
   return (
-    <>
+    <div className={styles.page}>
       <Header setIsOpen={setIsOpen} />
       <div className={styles.container}>
         <MenuBar isOpen={isOpen} />
@@ -54,6 +54,6 @@ export default function Chats() {
           chats={chats}
         />
       </div>
-    </>
+    </div>
   );
 }
