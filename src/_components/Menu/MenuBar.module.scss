@@ -9,6 +9,8 @@ $secondary-white: #d7e2e9;
   font-weight: 600;
   font-size: 20px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .nav {
   position: fixed; /* fixed */
@@ -32,4 +34,9 @@ $secondary-white: #d7e2e9;
     position: relative; /* md:relative */
     padding: 30px; /* p-4 */
   }
+}
+
+.icon {
+  font-size: 30px;
+  margin-right: 10px;
 }

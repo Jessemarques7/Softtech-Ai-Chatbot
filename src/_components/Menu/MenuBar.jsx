@@ -1,6 +1,9 @@
 "use client";
-import Image from "next/image";
-import { useState } from "react";
+import { IoChatboxEllipsesOutline } from "react-icons/io5";
+import { HiOutlineHome } from "react-icons/hi";
+import { VscGraph } from "react-icons/vsc";
+import { BsFileEarmarkBarGraph } from "react-icons/bs";
+import { LuFileSearch } from "react-icons/lu";
 import styles from "./MenuBar.module.scss";
 import Link from "next/link";
 
@@ -11,20 +14,20 @@ export default function MenuBar({ isOpen }) {
         <>
           <nav className={styles.nav}>
             <Link className={styles.link} href={"/"}>
-              Home
+              <HiOutlineHome className={styles.icon} /> Home
             </Link>
             <Link className={styles.link} href={"/sobre"}>
-              Sobre o Projeto
+              <LuFileSearch className={styles.icon} /> Sobre o Projeto
             </Link>
             <hr />
             <Link className={styles.link} href={"/chats"}>
-              Chat
+              <IoChatboxEllipsesOutline className={styles.icon} /> Chat
             </Link>
             <Link className={styles.link} href={"/chamados"}>
-              Chamados
+              <BsFileEarmarkBarGraph className={styles.icon} /> Chamados
             </Link>
             <Link className={styles.link} href={"/dashboard"}>
-              Dashboard
+              <VscGraph className={styles.icon} /> Dashboard
             </Link>
           </nav>
         </>

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import styles from "./page.module.scss";
-import Image from "next/image";
+
 import Header from "@/_components/Header/Header";
 import MenuBar from "@/_components/Menu/MenuBar";
 import { useState } from "react";
@@ -24,21 +24,23 @@ export default function Home() {
           </section>
           <section className={styles.features}>
             <div className={styles.featureList}>
-              <div className={styles.featureItem}>
+              <Link href={"/chamados"} className={styles.featureItem}>
                 <h3>Chamados</h3>
-                <p>Visualizar e responder chamados existentes.</p>
-              </div>
-              <div className={styles.featureItem}>
+                <div>Visualizar e responder chamados existentes.</div>
+              </Link>
+              <Link href={"/dashboard"} className={styles.featureItem}>
                 <h3>Dashbords</h3>
-                <p>
+                <div>
                   Acessar e criar Dashboards para analisar as métricas dos
                   atendimentos.
-                </p>
-              </div>
-              <div className={styles.featureItem}>
+                </div>
+              </Link>
+              <Link href={"/chat"} className={styles.featureItem}>
                 <h3>AiTech</h3>
-                <p>Inteligencia Artificial para auxilio nos atendimentos.</p>
-              </div>
+                <div>
+                  Inteligencia Artificial para auxilio nos atendimentos.
+                </div>
+              </Link>
             </div>
           </section>
 
@@ -47,6 +49,29 @@ export default function Home() {
               Começar <span>&rarr;</span>
             </button>
           </Link>
+
+          <div className={styles.videos}>
+            <div className={styles.video}>
+              <iframe
+                src="https://www.youtube.com/embed/WH6P9Safct4"
+                title="17 de maio de 2024"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className={styles.video}>
+              <iframe
+                src="https://www.youtube.com/embed/WH6P9Safct4"
+                title="17 de maio de 2024"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
         </main>
       </div>
 

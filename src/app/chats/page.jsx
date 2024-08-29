@@ -9,7 +9,7 @@ import { useChat } from "@/utils/use-chat";
 import { useState } from "react";
 import MenuBar from "../../_components/Menu/MenuBar";
 
-const openAiKey = "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";
+const openAiKey = "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";
 
 export default function Chats() {
   const [isOpen, setIsOpen] = useState(true); // window.innerWidth > 768

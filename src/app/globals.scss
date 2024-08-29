@@ -23,3 +23,24 @@ body {
     ),
     radial-gradient(at 82% 85%, hsl(193, 65%, 73%) 0, transparent 55%);
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track sss*/
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cbcaca;
+  border-radius: 999px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a5a6a9;
+}
