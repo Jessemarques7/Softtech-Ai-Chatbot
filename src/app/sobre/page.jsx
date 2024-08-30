@@ -13,12 +13,12 @@ const integrantes = [
   {
     nome: "Thiago dos Santos Cordeiro",
     foto: "/integrantes/Thiago.jpg",
-    descricao: "Descrição do que o integrante realizou no projeto.",
+    descricao: "Responsável pela arquitetura do projeto e qualidade na entrega.",
   },
   {
     nome: "Jessé Marques Mateus",
     foto: "/integrantes/jesseM-2.jpeg",
-    descricao: "Descrição do que o integrante realizou no projeto.",
+    descricao: "Desenvolvedor do sistema, integrações com IA meta e banco de dados, criação de dashs.",
   },
   {
     nome: "Lucas Gomes Tambasco",
@@ -29,12 +29,12 @@ const integrantes = [
   {
     nome: "Jean Giusepe Silva Macedo",
     foto: "/integrantes/Jean.jpg",
-    descricao: "Descrição do que o integrante realizou no projeto.",
+    descricao: ".",
   },
   {
     nome: "Adrion Agniver Da Silva Jorge",
     foto: "/images/user-icon.png",
-    descricao: "Descrição do que o integrante realizou no projeto.",
+    descricao: ".",
   },
 ];
 
@@ -55,46 +55,13 @@ export default function SobreProjeto() {
           <section className={styles.text}>
             <h1 className={styles.h1}>Sobre o Projeto</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              dolor minima laudantium soluta, obcaecati, ullam eius facere
-              natus, cumque impedit illo pariatur numquam adipisci nihil
-              assumenda commodi alias odit voluptatibus fuga optio hic
-              doloremque quas excepturi! Harum molestiae blanditiis, assumenda,
-              et, voluptate ratione laudantium natus ullam illum est corporis
-              recusandae officiis nam porro! Quidem voluptatibus at architecto
-              accusamus hic exercitationem. Ad iste dolorem molestias deserunt!
-              Dolorum mollitia consectetur perspiciatis est voluptatum saepe
-              quia unde reprehenderit vel accusamus libero, nemo magni nihil
-              fuga ducimus iusto temporibus dolore vero odio at ab! Nulla sit
-              voluptatem amet? Inventore earum facere nisi natus magnam.
+              A Ideia do projeto é ter um sistema funcional onde os chamados atendidos no dia são carregador numa base integrada e assim conseguimos ter um histórico e acompanhar as métricas de atendimento da empresa.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              dolor minima laudantium soluta, obcaecati, ullam eius facere
-              natus, cumque impedit illo pariatur numquam adipisci nihil
-              assumenda commodi alias odit voluptatibus fuga optio hic
-              doloremque quas excepturi! Harum molestiae blanditiis, assumenda,
-              et, voluptate ratione laudantium natus ullam illum est corporis
-              recusandae officiis nam porro! Quidem voluptatibus at architecto
-              accusamus hic exercitationem. Ad iste dolorem molestias deserunt!
-              Dolorum mollitia consectetur perspiciatis est voluptatum saepe
-              quia unde reprehenderit vel accusamus libero, nemo magni nihil
-              fuga ducimus iusto temporibus dolore vero odio at ab! Nulla sit
-              voluptatem amet? Inventore earum facere nisi natus magnam.
+              Pensando nisso criamos uma solução IATECH. Inteligencia artificial para ajudar o Atendente a ter mais assertividade e agilidade nas respostas dos chamados.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              dolor minima laudantium soluta, obcaecati, ullam eius facere
-              natus, cumque impedit illo pariatur numquam adipisci nihil
-              assumenda commodi alias odit voluptatibus fuga optio hic
-              doloremque quas excepturi! Harum molestiae blanditiis, assumenda,
-              et, voluptate ratione laudantium natus ullam illum est corporis
-              recusandae officiis nam porro! Quidem voluptatibus at architecto
-              accusamus hic exercitationem. Ad iste dolorem molestias deserunt!
-              Dolorum mollitia consectetur perspiciatis est voluptatum saepe
-              quia unde reprehenderit vel accusamus libero, nemo magni nihil
-              fuga ducimus iusto temporibus dolore vero odio at ab! Nulla sit
-              voluptatem amet? Inventore earum facere nisi natus magnam.
+              Temos a intenção de evoluir nosso sistema criando mais interação com o atendente/Usuário, permitindo abrir chamados e criar regras de acordo com a necessidade de negócio.
             </p>
           </section>
           <section>

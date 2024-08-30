@@ -53,21 +53,19 @@ export default function Home() {
             </div>
             <div className={styles.featureList}>
               <Link href={"/chamados"} className={styles.featureItem}>
-                <h3>Chamados</h3>
-                <div>Visualizar e responder chamados existentes.</div>
+              <h3>Visualizar Chamados</h3>
+              <p> Acesso a todos os chamados existentes.</p>
               </Link>
               <Link href={"/dashboard"} className={styles.featureItem}>
-                <h3>Dashbords</h3>
-                <div>
-                  Acessar e criar Dashboards para analisar as métricas dos
-                  atendimentos.
-                </div>
+              <h3>Acessar Dashboards</h3>
+              <p>
+                Analisar as métricas dos
+                atendimentos.
+              </p>
               </Link>
               <Link href={"/chats"} className={styles.featureItem}>
-                <h3>AiTech</h3>
-                <div>
-                  Inteligencia Artificial para auxilio nos atendimentos.
-                </div>
+              <h3>AI Tech</h3>
+              <p>Inteligência Artificial para auxílio nos atendimentos.</p>
               </Link>
             </div>
           </section>
@@ -82,16 +80,10 @@ export default function Home() {
             <div className={styles.textVideo2}>
               <h2>Projeto</h2>
               <p>
-                O making of do nosso projeto Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Rerum ex doloribus mollitia
-                quisquam ratione ipsa dignissimos nostrum nobis? Ad alias
-                eligendi esse quos rem voluptatum ab laborum amet sit sunt!
+                Organizamos o atendimento da sua empresa, acelerar as respostas dos chamados com qualidade e disponibilizamos os resultados utilizando Dashboards.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                ullam blanditiis facilis magnam aliquid distinctio amet?
-                Corrupti facere non accusantium, at vel labore id minus minima
-                exercitationem alias atque veniam?
+                A Seguir video tutorial de como testar a plataforma:
               </p>
             </div>
 

@@ -37,7 +37,7 @@ export default function Chats() {
       <div className={styles.container}>
         <MenuBar isOpen={isOpen} />
         <main className={styles.main}>
-          <h1 className={styles.h1}>Softtek Ai</h1>
+          <h1 className={styles.h1}>AI TECH</h1>
           <ChatMessages
             messages={chats[selectedChat].messages}
             isLoading={isLoading}
