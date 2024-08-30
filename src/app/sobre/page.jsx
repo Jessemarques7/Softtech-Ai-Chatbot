@@ -13,12 +13,14 @@ const integrantes = [
   {
     nome: "Thiago dos Santos Cordeiro",
     foto: "/integrantes/Thiago.jpg",
-    descricao: "Responsável pela arquitetura do projeto e qualidade na entrega.",
+    descricao:
+      "Responsável pela arquitetura do projeto e qualidade na entrega.",
   },
   {
     nome: "Jessé Marques Mateus",
     foto: "/integrantes/jesseM-2.jpeg",
-    descricao: "Desenvolvedor do sistema, integrações com IA meta e banco de dados, criação de dashs.",
+    descricao:
+      "Desenvolvedor do sistema, integrações com IA meta e banco de dados, criação de dashs.",
   },
   {
     nome: "Lucas Gomes Tambasco",
@@ -55,13 +57,31 @@ export default function SobreProjeto() {
           <section className={styles.text}>
             <h1 className={styles.h1}>Sobre o Projeto</h1>
             <p>
-              A Ideia do projeto é ter um sistema funcional onde os chamados atendidos no dia são carregador numa base integrada e assim conseguimos ter um histórico e acompanhar as métricas de atendimento da empresa.
+              A Ideia do projeto é ter um sistema funcional onde os chamados
+              atendidos no dia são carregador numa base integrada e assim
+              conseguimos ter um histórico e acompanhar as métricas de
+              atendimento da empresa.
             </p>
             <p>
-              Pensando nisso criamos uma solução IATECH. Inteligencia artificial para ajudar o Atendente a ter mais assertividade e agilidade nas respostas dos chamados.
+              Pensando nisso criamos uma solução IATECH. Inteligencia artificial
+              para ajudar o Atendente a ter mais assertividade e agilidade nas
+              respostas dos chamados.
             </p>
             <p>
-              Temos a intenção de evoluir nosso sistema criando mais interação com o atendente/Usuário, permitindo abrir chamados e criar regras de acordo com a necessidade de negócio.
+              Temos a intenção de evoluir nosso sistema criando mais interação
+              com o atendente/Usuário, permitindo abrir chamados e criar regras
+              de acordo com a necessidade de negócio.
+            </p>
+
+            <h4>Tecnologias</h4>
+
+            <p>
+              Nosso projeto consiste de uma base de React JS explorando
+              conceitos de uso de api e dados estaticos.
+            </p>
+            <p>
+              Tendo a estilização sido feita com Sass e o uso de componentes
+              BootStrap.
             </p>
           </section>
           <section>

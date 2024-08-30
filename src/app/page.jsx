@@ -30,11 +30,10 @@ export default function Home() {
               melhorar a assertividade e produtividade no atendimento do Service
               Desk e AMS nível 2.
             </p>
-
             <div className={styles.video}>
               <iframe
-                src="https://www.youtube.com/embed/WH6P9Safct4"
-                title="17 de maio de 2024"
+                src="https://www.youtube.com/embed/cG-Goloo_PE?si=7ilkbqv28mGVLLDK"
+                title="Video Pitch - Softteck Ia"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
@@ -53,19 +52,16 @@ export default function Home() {
             </div>
             <div className={styles.featureList}>
               <Link href={"/chamados"} className={styles.featureItem}>
-              <h3>Visualizar Chamados</h3>
-              <p> Acesso a todos os chamados existentes.</p>
+                <h3>Visualizar Chamados</h3>
+                <p> Acesso a todos os chamados existentes.</p>
               </Link>
               <Link href={"/dashboard"} className={styles.featureItem}>
-              <h3>Acessar Dashboards</h3>
-              <p>
-                Analisar as métricas dos
-                atendimentos.
-              </p>
+                <h3>Acessar Dashboards</h3>
+                <p>Analisar as métricas dos atendimentos.</p>
               </Link>
               <Link href={"/chats"} className={styles.featureItem}>
-              <h3>AI Tech</h3>
-              <p>Inteligência Artificial para auxílio nos atendimentos.</p>
+                <h3>AI Tech</h3>
+                <p>Inteligência Artificial para auxílio nos atendimentos.</p>
               </Link>
             </div>
           </section>
@@ -80,17 +76,17 @@ export default function Home() {
             <div className={styles.textVideo2}>
               <h2>Projeto</h2>
               <p>
-                Organizamos o atendimento da sua empresa, acelerar as respostas dos chamados com qualidade e disponibilizamos os resultados utilizando Dashboards.
+                Organizamos o atendimento da sua empresa, acelerar as respostas
+                dos chamados com qualidade e disponibilizamos os resultados
+                utilizando Dashboards.
               </p>
-              <p>
-                A Seguir video tutorial de como testar a plataforma:
-              </p>
+              <p>A Seguir o making off e projeto inicial da plataforma:</p>
             </div>
 
             <div className={styles.video2}>
               <iframe
-                src="https://www.youtube.com/embed/cG-Goloo_PE?si=7ilkbqv28mGVLLDK"
-                title="Video Pitch - Softteck Ia"
+                src="https://www.youtube.com/embed/WH6P9Safct4"
+                title="17 de maio de 2024"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
