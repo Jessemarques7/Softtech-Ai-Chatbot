@@ -97,8 +97,8 @@ export default function Home() {
 
             <div className={styles.video2}>
               <iframe
-                src="https://www.youtube.com/embed/WH6P9Safct4"
-                title="17 de maio de 2024"
+                src="https://www.youtube.com/embed/cG-Goloo_PE?si=7ilkbqv28mGVLLDK"
+                title="Video Pitch - Softteck Ia"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
