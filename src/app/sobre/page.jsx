@@ -33,7 +33,7 @@ const integrantes = [
   },
   {
     nome: "Adrion Agniver Da Silva Jorge",
-    foto: "/integrantes/",
+    foto: "/images/user-icon.png",
     descricao: "Descrição do que o integrante realizou no projeto.",
   },
 ];
