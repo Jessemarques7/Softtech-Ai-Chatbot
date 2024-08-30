@@ -29,6 +29,7 @@ $secondary-white: #d7e2e9;
   grid-template-rows: repeat(2, 1fr);
   max-width: 920px;
   margin: auto;
+  margin-bottom: 100px;
 
   :nth-child(1) {
     grid-area: 1 / 1;
@@ -95,4 +96,8 @@ $secondary-white: #d7e2e9;
   .h1 {
     font-size: 45px;
   }
+}
+
+.text {
+  padding: 50px 200px;
 }

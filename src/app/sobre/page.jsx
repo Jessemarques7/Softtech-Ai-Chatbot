@@ -12,7 +12,7 @@ import MenuBar from "@/_components/Menu/MenuBar";
 const integrantes = [
   {
     nome: "Thiago dos Santos Cordeiro",
-    foto: "/integrantes/",
+    foto: "/integrantes/Thiago.jpg",
     descricao: "Descrição do que o integrante realizou no projeto.",
   },
   {
@@ -28,7 +28,7 @@ const integrantes = [
   },
   {
     nome: "Jean Giusepe Silva Macedo",
-    foto: "/integrantes/",
+    foto: "/integrantes/Jean.jpg",
     descricao: "Descrição do que o integrante realizou no projeto.",
   },
   {
@@ -52,49 +52,96 @@ export default function SobreProjeto() {
       <div className={styles.container}>
         <MenuBar isOpen={isOpen} />
         <main className={styles.main}>
-          <h1 className={styles.h1}>Integrantes</h1>
-          <div className="container my-4">
-            <div className={styles.containerCards}>
-              {integrantes.map((integrante, index) => (
-                <div className={`${styles.card}  `} key={index}>
-                  <Image
-                    alt={integrante.nome}
-                    src={integrante.foto}
-                    width={250}
-                    height={150}
-                    className={styles.image}
-                  />
-                  <div className="card-body">
-                    <h5 className={`${styles.cardTitle} card-title`}>
-                      {integrante.nome}
-                    </h5>
-                    <div className={`${styles.buttonContainer} container`}>
-                      <button
-                        className="btn btn-link p-0 d-block mt-2"
-                        onClick={() => toggleExpand(index)}
-                        aria-expanded={expandedIndex === index}
-                        aria-controls={`collapseText-${index}`}
-                      >
-                        <i
-                          className={`bi ${
-                            expandedIndex === index
-                              ? "bi-chevron-up"
-                              : "bi-chevron-down"
-                          }`}
-                        ></i>
-                      </button>
+          <section className={styles.text}>
+            <h1 className={styles.h1}>Sobre o Projeto</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              dolor minima laudantium soluta, obcaecati, ullam eius facere
+              natus, cumque impedit illo pariatur numquam adipisci nihil
+              assumenda commodi alias odit voluptatibus fuga optio hic
+              doloremque quas excepturi! Harum molestiae blanditiis, assumenda,
+              et, voluptate ratione laudantium natus ullam illum est corporis
+              recusandae officiis nam porro! Quidem voluptatibus at architecto
+              accusamus hic exercitationem. Ad iste dolorem molestias deserunt!
+              Dolorum mollitia consectetur perspiciatis est voluptatum saepe
+              quia unde reprehenderit vel accusamus libero, nemo magni nihil
+              fuga ducimus iusto temporibus dolore vero odio at ab! Nulla sit
+              voluptatem amet? Inventore earum facere nisi natus magnam.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              dolor minima laudantium soluta, obcaecati, ullam eius facere
+              natus, cumque impedit illo pariatur numquam adipisci nihil
+              assumenda commodi alias odit voluptatibus fuga optio hic
+              doloremque quas excepturi! Harum molestiae blanditiis, assumenda,
+              et, voluptate ratione laudantium natus ullam illum est corporis
+              recusandae officiis nam porro! Quidem voluptatibus at architecto
+              accusamus hic exercitationem. Ad iste dolorem molestias deserunt!
+              Dolorum mollitia consectetur perspiciatis est voluptatum saepe
+              quia unde reprehenderit vel accusamus libero, nemo magni nihil
+              fuga ducimus iusto temporibus dolore vero odio at ab! Nulla sit
+              voluptatem amet? Inventore earum facere nisi natus magnam.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              dolor minima laudantium soluta, obcaecati, ullam eius facere
+              natus, cumque impedit illo pariatur numquam adipisci nihil
+              assumenda commodi alias odit voluptatibus fuga optio hic
+              doloremque quas excepturi! Harum molestiae blanditiis, assumenda,
+              et, voluptate ratione laudantium natus ullam illum est corporis
+              recusandae officiis nam porro! Quidem voluptatibus at architecto
+              accusamus hic exercitationem. Ad iste dolorem molestias deserunt!
+              Dolorum mollitia consectetur perspiciatis est voluptatum saepe
+              quia unde reprehenderit vel accusamus libero, nemo magni nihil
+              fuga ducimus iusto temporibus dolore vero odio at ab! Nulla sit
+              voluptatem amet? Inventore earum facere nisi natus magnam.
+            </p>
+          </section>
+          <section>
+            <h1 className={styles.h1}>Integrantes</h1>
+            <div className="container my-4">
+              <div className={styles.containerCards}>
+                {integrantes.map((integrante, index) => (
+                  <div className={`${styles.card}  `} key={index}>
+                    <Image
+                      alt={integrante.nome}
+                      src={integrante.foto}
+                      width={250}
+                      height={150}
+                      className={styles.image}
+                    />
+                    <div className="card-body">
+                      <h5 className={`${styles.cardTitle} card-title`}>
+                        {integrante.nome}
+                      </h5>
+                      <div className={`${styles.buttonContainer} container`}>
+                        <button
+                          className="btn btn-link p-0 d-block mt-2"
+                          onClick={() => toggleExpand(index)}
+                          aria-expanded={expandedIndex === index}
+                          aria-controls={`collapseText-${index}`}
+                        >
+                          <i
+                            className={`bi ${
+                              expandedIndex === index
+                                ? "bi-chevron-up"
+                                : "bi-chevron-down"
+                            }`}
+                          ></i>
+                        </button>
 
-                      {expandedIndex === index && (
-                        <div className="mt-3" id={`collapseText-${index}`}>
-                          <p className={styles.p}>{integrante.descricao}</p>
-                        </div>
-                      )}
+                        {expandedIndex === index && (
+                          <div className="mt-3" id={`collapseText-${index}`}>
+                            <p className={styles.p}>{integrante.descricao}</p>
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
+          </section>
         </main>
       </div>
     </>

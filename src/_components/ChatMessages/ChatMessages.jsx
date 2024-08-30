@@ -5,9 +5,11 @@ import styles from "./ChatMessages.module.scss";
 export default function ChatMessages({ messages, isLoading }) {
   return (
     <div className={styles.messages}>
-      {messages?.map((message, index) => (
-        <MessageBLock key={index} message={message} />
-      ))}
+      {messages
+        ?.filter((message, index) => index !== 0)
+        ?.map((message, index) => (
+          <MessageBLock key={index} message={message} />
+        ))}
       {isLoading && (
         <MessageBLock message={{ role: "assistant", content: "" }} isLoading />
       )}
